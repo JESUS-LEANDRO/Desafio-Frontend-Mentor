@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    justify-content: space-between;
+    padding: 30px;
+}
+nav, ul, li{
+    display: flex;
+    gap: 30px;
+}
+ul, li {
+    padding-top: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: red;
+}
+.desktop{
+    width: 100%;
+    padding: 10px;
+}
+body{
+    display: grid;
+    grid-template-areas: "header header" "maim aside" "section section" "footer footer" ;
+    flex-wrap: wrap;
+}
+maim{
+    grid-area: maim;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+}
+maim, .conteudo{
+    display: flex;
+    margin: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+maim, h1{
+    font-size: 36px;
+    margin-right: 40px;
+}
+.conteudo > p{
+    font-size: 16px;
+    margin-left: 10px;
+}
+button{
+    background: rgb(20, 20, 20);
+    border: none;
+    height: 40px;
+    flex-wrap: wrap;
+    margin-left: 50%;
+    width: 140px;
+}
+button > a{
+    color: white;
+}
+button:hover{
+    background: red;
+    color: white;  
+}
+aside{
+    grid-area: aside;
+    grid-gap: 20px;
+    background: rgb(15, 15, 15);
+    margin-top: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    height: 420px;
+    margin-right: 30px;
+    width: 260px;
+}
+.new > h1{
+    color: rgb(255, 153, 0);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.new, .new-item{
+    color: white;
+    margin: 10px;
+}
+.new, p{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+hr{
+    margin-top: 40px;
+    color: rgba(155, 145, 145, 0.432);
+    height: 0,1px;
+    width: 220px;
+    margin-left: 10px;
+}
+.new-item:hover{
+    color: rgb(255, 153, 0);
+}
+.new, h2{
+    font-size: 16px;
+}
+section{
+    grid-area: section;
+    grid-gap: 20px;
+    padding: 30px;
+    display: flex;
+}
+.item-1, .item-2, .item-3{
+    display: flex;
+}
+section h1{
+    padding: 3px;
+    font-size: 20px;
+    margin-top: 5px;
+    color: gray;
+}
+section h2{
+    margin-left: 3px;
+    margin-top: 10px;
+}
+section img{
+    height: 150px;
+    padding: 10px;
+    display: flex;
+}
+section > .img-2{
+    height: 150px;
+}
+section .img-3{
+    height:150px;
+}
+section a:hover{
+    color: red;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+footer a:hover{
+    color: red;
+}
